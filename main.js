@@ -97,3 +97,21 @@ vehicle.engine = function(){
 }
 
 console.log(vehicle)
+
+const newVehicle={
+    doors: 4,
+    color: "red",
+    engine(){
+        console.log(`No of doors ${this.doors} and the color is ${this.color}`)
+    }
+}
+
+console.log(newVehicle)
+
+const car = Object.create(newVehicle)
+car.color = "Blue"
+car.engine = function(){
+    console.log("the engine says Vroom")
+}
+
+car.engine()

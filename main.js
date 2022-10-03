@@ -115,3 +115,20 @@ car.engine = function(){
 }
 
 car.engine()
+
+
+//Destructuring
+
+/* const person ={
+    firstName: "Sam",
+    id: 45678
+} */
+
+//let{firstName: lastName, id: otherId} = person;
+
+
+
+//for of loop
+for(let[key,values]of Object.entries(professor)){
+    console.log(`${key} ${values}`)
+}

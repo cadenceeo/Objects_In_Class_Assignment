@@ -62,3 +62,38 @@ for(i=0;i<library.length;i++){
         console.log(library[i].book + " Still needs to be read")
     }
 }
+
+//Key, values, & entries
+const professor = {
+    firstName: "Harry",
+    email: "harry@gmail.com",
+    location: "Hammond Hall",
+    courses: [
+        {title: "front-end 1", students: 30},
+        {title: "back-end 1", students: 30},
+        {title: "mobile 1", students: 30},
+
+    ]
+}
+
+let keys = Object.keys(professor)
+
+keys.forEach(key =>{
+    console.log(key)
+})
+
+
+//For in loop
+for(let keys in professor){
+    console.log(keys)
+}
+
+//Creating an Object
+const vehicle = new Object();
+vehicle.doors = 4;
+vehicle.color = "silver";
+vehicle.engine = function(){
+    console.log("Vroom")
+}
+
+console.log(vehicle)
